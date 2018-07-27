@@ -1,14 +1,8 @@
-cargo-features = ["edition"]
-
 [package]
 name = "test_sentry"
 version = "0.1.0"
 authors = ["damody <liam.huang@4ipnet.com>"]
-edition = '2018'
 
 [dependencies]
 backtrace = "0.3"
-
-[dependencies.sentry]
-features = ["with_backtrace"]
-path = "../sentry-rust"
+sentry = "0.7"
